@@ -7,7 +7,7 @@ cp -avf "/ctx/system_files"/. /
 
 ### Install Cachy kernel
 dnf5 -y copr enable bieszczaders/kernel-cachyos
-sudo dnf copr enable bieszczaders/kernel-cachyos-addons
+dnf5 -y copr enable bieszczaders/kernel-cachyos-addons
 
 dnf5 -y remove kernel kernel-core kernel-modules kernel-modules-core kernel-modules-extra
 dnf5 -y install kernel-cachyos kernel-cachyos-devel-matched scx-scheds scx-tools
